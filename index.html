@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script src="giveth.js" defer></script>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html
+        {
+            height: 100%;
+        }
+        
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #ccc5b9;
+            height: 100dvh;
+            font-size: 1rem;
+        }
+
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: #fffcf2;
+        }
+
+        .input-cont
+        {
+            padding: 1rem;
+            width: 35rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .button-cont
+        {
+            padding: 1rem;
+            width: 35rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .result-cont
+        {
+            padding: 1rem;
+            width: 35rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        h2
+        {
+            padding: 0.3rem;
+        }
+
+        .reset, .print
+        {
+            height: 2.5rem;
+            width: 8rem;
+            margin: 0 1.5rem;
+            background-color: #eb5e28;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        .reset:active, .print:active
+        {
+            background-color: #eb5f28ee;
+            cursor: wait;
+        }
+
+        @media screen and (max-width: 567px)
+        {
+            h1
+            {
+                font-size: 1.2rem;
+                width: 100dvw;
+            }    
+
+            h2
+            {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter five fruits of your choice in each respective input element</h1>
+        <div class="input-cont">
+            <h2>Enter your first fruit1</h2>
+            <input type="text" name="fruits-entered." id="fruit1">
+        </div>
+    
+        <div class="input-cont">
+            <h2>Enter your second fruit</h2>
+            <input type="text" name="fruits-entered." id="fruit2">
+        </div>
+    
+        <div class="input-cont">
+            <h2>Enter your third fruit</h2>
+            <input type="text" name="fruits-entered." id="fruit3">
+        </div>
+    
+        <div class="input-cont">
+            <h2>Enter your fourth fruit</h2>
+            <input type="text" name="fruits-entered." id="fruit4">
+        </div>
+    
+        <div class="input-cont">
+            <h2>Enter your fifth fruit</h2>
+            <input type="text" name="fruits-entered." id="fruit5">
+        </div>
+
+        <div class="button-cont">
+            <button id="reset" class="reset">Reset</button>
+            <button id="print" class="print">Print</button>
+        </div>
+        <div class="result-cont">
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
