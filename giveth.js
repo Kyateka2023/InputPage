@@ -38,7 +38,7 @@ console.log(typeof minerals);
 console.log(Array.isArray(minerals));
 */
 
-//Create a program that asks the user for 5 fruit names and stores them in an array. Then, print the entire list of fruits.
+
 /*
 const fruits = [];
 fruits[0] = "apple";
@@ -56,6 +56,7 @@ function FruitsDisplayed(fruits)
 fruits.forEach(FruitsDisplayed);
 */
 
+//Create a program that asks the user for 5 fruit names and stores them in an array. Then, print the entire list of fruits.
 //access and store all the input variables
 const fruit1 = document.getElementById("fruit1");
 const fruit2 = document.getElementById("fruit2");
@@ -80,6 +81,7 @@ function print()
     let fruit3value = fruit3.value;
     let fruit4value = fruit4.value;
     let fruit5value = fruit5.value;
+    
 
     //create an array for these items
     const fruitArray = [];
@@ -98,6 +100,8 @@ function print()
     {
         let paragraphText = document.createTextNode(fruitArray[i]);
         paragraph.appendChild(paragraphText);    
+        paragraph.style.textAlign = "center";
+        paragraph.style.margin = "0 auto";
     }
 
     console.log("Items have been printed out successfully");
